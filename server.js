@@ -7,4 +7,9 @@ app.get("/", (req, res) => {
   res.sendStatus(200);
 });
 
+app.get("/dashboard", (req, res) => {
+  console.log("I hit the dashboard endpoint");
+  res.send("hi");
+});
+
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

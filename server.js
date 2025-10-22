@@ -7,7 +7,12 @@ const data = {
 };
 
 app.get("/", (req, res) => {
-  res.send("<h1>Home</h1>");
+  res.send(`
+        <body>
+            <h1>DATA</h1>
+            <p>${JSON.stringify(data)}</p>
+        </body>
+    `);
 });
 
 app.get("/dashboard", (req, res) => {

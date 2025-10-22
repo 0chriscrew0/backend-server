@@ -31,4 +31,10 @@ app.post("/api/data", (req, res) => {
   res.sendStatus(201);
 });
 
+app.delete("/api/data", (req, res) => {
+  data.pop();
+  console.log("Deleted element from end of array");
+  res.sendStatus(203);
+});
+
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

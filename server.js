@@ -3,13 +3,11 @@ const app = express();
 const PORT = 8383;
 
 app.get("/", (req, res) => {
-  console.log("I hit and endpoint!", req.method);
-  res.sendStatus(200);
+  res.send("<h1>Home</h1>");
 });
 
 app.get("/dashboard", (req, res) => {
-  console.log("I hit the dashboard endpoint");
-  res.send("hi");
+  res.send("<h1>Dashboard</h1>");
 });
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

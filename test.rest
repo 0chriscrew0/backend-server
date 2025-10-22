@@ -1,0 +1,7 @@
+### TEST GET / WEBSITE
+
+GET http://localhost:8383
+
+### TEST GET /dashboard WEBSITE
+
+GET http://localhost:8383/dashboard
